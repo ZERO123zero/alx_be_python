@@ -5,10 +5,10 @@ def daily_reminder():
     task = input("Enter your task: ")  
 
     # Prompt for priority  
-    priority = input("Priority (high/medium/low): ").lower()  
+    priority = input("Priority (high/medium/low): ").lower().strip()  
 
     # Prompt for time sensitivity  
-    is_time_bound = input("Is it time-bound (yes/no): ").lower()  
+    is_time_bound = input("Is it time-bound (yes/no): ").lower().strip()  
 
     # Determine priority messages using Match Case  
     match priority:  
